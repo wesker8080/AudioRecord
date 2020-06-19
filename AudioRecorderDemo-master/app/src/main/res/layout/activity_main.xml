@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.audiorecorderdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/recordInfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/recordTime"
+            android:layout_gravity="center_vertical"
+            android:gravity="right|center_vertical"
+            android:textSize="30dp"
+            android:textColor="#ff8080"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="秒"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnRecordStart"
+            android:text="开始录音"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnRecordPause"
+            android:text="暂停录音"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnRecordStop"
+            android:text="停止录音"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnRecordAndPlay"
+            android:text="边录边播"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ProgressBar
+            android:id="@+id/progressBarAudioPlay"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="right|center_vertical"
+            android:textSize="30dp"
+            android:textColor="#ff8080"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tvPlayProgress"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <!--<TextView-->
+            <!--android:text="秒"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="left|center_vertical"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPlayStart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="播放录音" />
+        <Button
+            android:id="@+id/btnPlayPause"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="暂停播放" />
+
+        <Button
+            android:id="@+id/btnPlayStop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="停止播放" />
+    </LinearLayout>
+
+</LinearLayout>
